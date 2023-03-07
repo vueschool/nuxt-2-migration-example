@@ -1,5 +1,18 @@
 <template>
-  <pre class="mb-5">{{ product }}</pre>
+  <div>
+    <div class="flex">
+      <NuxtImg
+        v-for="image in product.images"
+        :key="image"
+        :src="image"
+        :alt="product.title"
+        width="200"
+        height="200"
+        fit="cover"
+      />
+    </div>
+    <pre class="mb-5">{{ product }}</pre>
+  </div>
 </template>
 <script>
 export default {
