@@ -7,7 +7,7 @@ const { data: product } = await useFetch(
 );
 
 useHead({
-  title: product.title,
+  title: product.value.title,
   meta: [
     {
       name: "description",
