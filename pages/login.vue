@@ -18,21 +18,26 @@ export default {
 </script>
 <template>
   <form @submit.prevent="login()">
-    <label class="block mb-5">
-      Username
+    <!-- Username -->
+    <div class="form-field mb-5">
+      <label for="username" class="block"> Username </label>
       <input
+        id="username"
         v-model="username"
         type="text"
         class="block border-[1px] border-gray-300 rounded"
       />
-    </label>
-    <label class="block mb-5">
-      Password
+    </div>
+
+    <!-- Password -->
+    <div class="form-field mb-5">
+      <label class="block" for="password"> Password </label>
       <input
+        id="password"
         type="password"
         class="block border-[1px] border-gray-300 rounded"
       />
-    </label>
+    </div>
     <AppButton>Login</AppButton>
   </form>
 </template>
