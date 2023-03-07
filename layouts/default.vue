@@ -28,12 +28,10 @@
 
 <script>
 export default {
-  data() {
-    return {
-      user: {
-        username: 'danielkellyio',
-      },
-    }
+  computed: {
+    user() {
+      return this.$store.state.user
+    },
   },
 }
 </script>
