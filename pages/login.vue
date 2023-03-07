@@ -1,20 +1,22 @@
 <script>
+definePageMeta({
+  layout: "plain-centered",
+});
 export default {
-  layout: 'plain-centered',
   data() {
     return {
-      username: '',
-    }
+      username: "",
+    };
   },
   methods: {
     login() {
-      this.$store.dispatch('setUser', {
+      this.$store.dispatch("setUser", {
         username: this.username,
-      })
-      this.$router.push('/')
+      });
+      this.$router.push("/");
     },
   },
-}
+};
 </script>
 <template>
   <form @submit.prevent="login()">
