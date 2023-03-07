@@ -33,6 +33,6 @@ export default {
         class="block border-[1px] border-gray-300 rounded"
       />
     </label>
-    <button class="btn">Login</button>
+    <AppButton>Login</AppButton>
   </form>
 </template>

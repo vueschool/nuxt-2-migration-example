@@ -1,7 +1,5 @@
 <template>
-  <div v-if="product">
-    <pre class="mb-5">{{ product }}</pre>
-  </div>
+  <pre class="mb-5">{{ product }}</pre>
 </template>
 <script>
 export default {

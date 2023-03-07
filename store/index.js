@@ -12,4 +12,9 @@ export const actions = {
   setUser({ commit }, payload) {
     commit('SET_USER', payload)
   },
+  logout({ commit }) {
+    commit('SET_USER', {
+      username: '',
+    })
+  },
 }

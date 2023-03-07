@@ -11,12 +11,13 @@
     <div class="opacity-50">
       <a
         v-if="resData.skip !== 0"
-        class="inline-block mr-3"
+        class="inline-block mr-3 cursor-pointer"
         @click.prevent="skip = skip - perPage"
         >Previous</a
       >
       <a
         v-if="resData.skip + perPage < resData.total"
+        class="cursor-pointer"
         @click.prevent="skip = skip + perPage"
         >Next</a
       >
