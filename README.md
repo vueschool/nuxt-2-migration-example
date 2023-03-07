@@ -1,42 +1,8 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 2 Migration Example
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This repo contains a Nuxt 2 site in the main branch and the same site migrated to Nuxt 3 in the migrated branch.
 
-## Setup
+In order to get from Nuxt 2 -> 3, the best process I've found to follow is such:
 
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+1. Create a new Nuxt 3 project with `npx nuxi init [project-name]`
+2. Move files one by one from the old project to the new and update syntaxes based on the advice from the [official migration guide](https://nuxt.com/docs/migration/overview).
